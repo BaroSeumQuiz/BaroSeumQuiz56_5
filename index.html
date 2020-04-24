@@ -1,35 +1,27 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<script>
- function checkval()
- {var val ="1번문제의 정답";
- if(val == (document.getElementById("출력1").value))
-
-  {var val ="2번문제의 정답";
-  if(val == (document.getElementById("출력2").value)
-
-   {alert("모두다 정답입니다.");
-   window.open('http://www.gyool.net');
-   }
-   else{
-   alert("2번이 오답입니다.");
-   }
-  }else{
-  alert("1,2번 중 오답이 있습니다.");
-  }
- }
-
-</script>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
 </head>
-
 <body>
- <form name="aform">
-  <input type="text" name="result" size=15 id="출력1"/><br />
-  <input type="text" name="result2" size=15 id="출력2"/><br />
-  <input type="button" id="btn" value="check" style= width:50 height=30 onclick="checkval()">
+ <h1>한국사 8급 문제</h1>
+ <p> 1. 다음 중 고려시대 왕은?</p>
+ <form name="form">
+  <input type="radio" name="kingName" value="v1">근초고왕<br>
+  <input type="radio" name="kingName" value="v2">의자왕<br>
+  <input type="radio" name="kingName" value="v3">충렬왕<br>
+  <input type="radio" name="kingName" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
  </form>
+ <p id="check"></p>
+ <script type="text/javascript">
+  function myFucntion() {
+   if(form.kingName[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+   else document.getElementById("check").innerHTML="오답입니다.";
+  }
+ </script>
 </body>
-
 </html>
+
+출처: https://yuchae.tistory.com/260 [앙큼한유채's 일상 Story]
