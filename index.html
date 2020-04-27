@@ -18,7 +18,11 @@
   <input type="button" name="선택" value="정답확인" onclick="myFucntion1()">
  </form>
  <p id="check1"></p>
-   <img src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/> 
+ <a href="javascript:hintshow();">힌트보기</a><br/>
+  <div id="hint" style="display:none;">
+     <img src="/BaroQuiztemplet/images/hint1.png" />
+  </div>
+ <img src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/> 
  <!-- <input type="button" id="nextq1" name="선택" value="다음" onclick="gonext(this)">-->
  </div>
  
@@ -212,11 +216,17 @@
      document.getElementById('cho7').style.display='none';
      
     }
-    
-  
-
-    
-    }
+  }
+ 
+  function hintshow(){
+   var con = document.getElementById("hint");
+   if(con.style.display=='none'){
+    con.style.display = 'block';
+   }else{
+    con.style.display = 'none';
+   }
+   
+  }
     
  </script>
  
