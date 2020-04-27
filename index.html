@@ -7,7 +7,7 @@
 <body>
  <img src="/images/title.gif" /> 
  <h1>한국사 8급 문제</h1>
- <div id="cho1" >
+ <div id="cho1" style="display:block;" >
  <p> 1. 다음 중 고려시대 왕은?</p>
  <form name="form1">
   <input type="radio" name="quiz1" value="v1">근초고왕<br>
@@ -17,10 +17,11 @@
   <input type="button" name="선택" value="정답확인" onclick="myFucntion1()">
  </form>
  <p id="check1"></p>
+    <input type="button" id="nextq1" name="선택" value="다음" onclick="gonext(this)">
  </div>
  
  
- <div id="cho2" >
+ <div id="cho2" style="display:none;" >
  <p> 2. 다음 중 고려시대 왕은?</p>
  <form name="form2">
   <input type="radio" name="quiz2" value="v1">근초고왕<br>
@@ -43,7 +44,12 @@
    else document.getElementById("check2").innerHTML="오답입니다.";
   }
    
-   function gonext(){
+   function gonext(id){
+    var num = (id.id).substr(5,1);
+    
+     
+    }
+    
     
    }
    
