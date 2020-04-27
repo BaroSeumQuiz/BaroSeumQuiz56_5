@@ -18,8 +18,8 @@
   <input type="button" name="선택" value="정답확인" onclick="myFucntion1()">
  </form>
  <p id="check1"></p>
- <a href="javascript:hintshow();">힌트보기</a><br/>
-  <div id="hint" style="display:none;">
+ <a href="javascript:hintshow(1);">힌트보기</a><br/>
+  <div id="hint1" style="display:none;">
      <img src="/BaroQuiztemplet/images/hint1.png" /> 힌트임
   </div>
  <img src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/> 
@@ -37,8 +37,8 @@
   <input type="button" name="선택" value="정답확인" onclick="myFucntion2()">
  </form>
  <p id="check2"></p>
-    <a href="javascript:hintshow();">힌트보기</a><br/>
-  <div id="hint" style="display:none;">
+    <a href="javascript:hintshow(2);">힌트보기</a><br/>
+  <div id="hint2" style="display:none;">
      <img src="/BaroQuiztemplet/images/hint2.png"/> 힌트임
   </div>
   <input type="button" id="nextq2" name="선택" value="다음" onclick="gonext(this)">
@@ -51,8 +51,8 @@
   <input type="button" name="선택" value="정답확인" onclick="myFucntion3()">
  </form>
  <p id="check3"></p>
-  <a href="javascript:hintshow();">힌트보기</a><br/>
-  <div id="hint" style="display:none;">
+  <a href="javascript:hintshow(3);">힌트보기</a><br/>
+  <div id="hint3" style="display:none;">
      <img src="/BaroQuiztemplet/images/hint3.png"/> 힌트임
   </div>
   <input type="button" id="nextq3" name="선택" value="다음" onclick="gonext(this)">
@@ -225,9 +225,9 @@
      
     }
   }
- 
-  function hintshow(){
-   var con = document.getElementById("hint");
+ int x = 0;
+  function hintshow(x){
+   var con = document.getElementById("hint"+x);
    if(con.style.display=='none'){
     con.style.display = 'block';
    }else{
