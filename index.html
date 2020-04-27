@@ -34,13 +34,61 @@
  <p id="check2"></p>
  </div>
  
- <div id="cho3" style="display:block;" >
+ <div id="cho3" style="display:none;" >
  <p> 3. 다음 중 고려시대 왕은?</p>
  <form name="form3">
   <input type="text" name="quiz3" value=""><br>
   <input type="button" name="선택" value="정답확인" onclick="myFucntion3()">
  </form>
  <p id="check3"></p>
+ </div>
+ 
+ <div id="cho4" style="display:none;" >
+ <p> 4. 다음 중 고려시대 왕은?</p>
+ <form name="form4">
+  <input type="radio" name="quiz4" value="v1">근초고왕<br>
+  <input type="radio" name="quiz4" value="v2">의자왕<br>
+  <input type="radio" name="quiz4" value="v3">충렬왕<br>
+  <input type="radio" name="quiz4" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion4()">
+ </form>
+ <p id="check4"></p>
+ </div>
+ 
+ <div id="cho5" style="display:none;" >
+ <p> 5. 다음 중 고려시대 왕은?</p>
+ <form name="form5">
+  <input type="radio" name="quiz5" value="v1">근초고왕<br>
+  <input type="radio" name="quiz5" value="v2">의자왕<br>
+  <input type="radio" name="quiz5" value="v3">충렬왕<br>
+  <input type="radio" name="quiz5" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion5()">
+ </form>
+ <p id="check5"></p>
+ </div>
+ 
+<div id="cho6" style="display:none;" >
+ <p> 6. 다음 중 고려시대 왕은?</p>
+ <form name="form6">
+  <input type="radio" name="quiz6" value="v1">근초고왕<br>
+  <input type="radio" name="quiz6" value="v2">의자왕<br>
+  <input type="radio" name="quiz6" value="v3">충렬왕<br>
+  <input type="radio" name="quiz6" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion6()">
+ </form>
+ <p id="check6"></p>
+ </div>
+ 
+<div id="cho7" style="display:none;" >
+ <p> 7. 다음 중 고려시대 왕은?</p>
+ <form name="form7">
+  <input type="radio" name="quiz7" value="v1">근초고왕<br>
+  <input type="radio" name="quiz7" value="v2">의자왕<br>
+  <input type="radio" name="quiz7" value="v3">충렬왕<br>
+  <input type="radio" name="quiz7" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion7()">
+ </form>
+ <p id="check7"></p>
  </div>
  
  
@@ -56,10 +104,32 @@
    else document.getElementById("check2").innerHTML="오답입니다.";
   }
    
-  function myFucntion3() {
+   function myFucntion3() {
    if(form3.quiz3.value=="근초고왕") document.getElementById("check3").innerHTML="정답입니다.";
    else document.getElementById("check3").innerHTML="오답입니다.";
   }
+   
+   function myFucntion4() {
+   if(form4.quiz4[2].checked==true) document.getElementById("check4").innerHTML="정답입니다.";
+   else document.getElementById("check4").innerHTML="오답입니다.";
+  }
+  
+   function myFucntion5() {
+   if(form5.quiz5[2].checked==true) document.getElementById("check5").innerHTML="정답입니다.";
+   else document.getElementById("check5").innerHTML="오답입니다.";
+  }
+   
+   function myFucntion6() {
+   if(form6.quiz6[2].checked==true) document.getElementById("check6").innerHTML="정답입니다.";
+   else document.getElementById("check6").innerHTML="오답입니다.";
+  }
+   
+   function myFucntion7() {
+   if(form7.quiz7[2].checked==true) document.getElementById("check7").innerHTML="정답입니다.";
+   else document.getElementById("check7").innerHTML="오답입니다.";
+  }
+   
+   
    
    
    
@@ -68,7 +138,65 @@
     if(num==1){
      document.getElementById('cho1').style.display='none';
      document.getElementById('cho2').style.display='block';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';     
     }
+    
+        if(num==2){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='block';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';     
+    }
+    
+        if(num==3){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='block';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';     
+    }
+    
+        if(num==4){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='block';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';     
+    }
+    
+        if(num==6){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='block';     
+    }
+    
+     if(num==7){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';
+     
+    }
+    
+  
 
     
     }
@@ -76,37 +204,7 @@
  </script>
  
  
-  <!--
- <div id="cho2" >
- <p> 1. 다음 중 조선시대 왕은?</p>
- <form name="form2">
-  <input type="radio" name="quiz2" value="v1">근초고<br>
-  <input type="radio" name="quiz2" value="v2">광해<br>
-  <input type="radio" name="quiz2" value="v3">숙종<br>
-  <input type="radio" name="quiz2" value="v4">성종<br>
-  <input type="button" name="선택" value="정답확인" onclick="myFucntion2()">
- </form>
- <p id="check2"></p>
- </div>
 
- <button onclick="myFucntion1()">역사 퀴즈</button>
- <p id="check">정답 체크</p>
- <script type="text/javascript">
-  function myFucntion1() {
-   var kingName = prompt("한글을 만든 왕은?", "");
-   if(kingName=="세종") document.getElementById("check").innerHTML = "정답입니다.";
-   else document.getElementById("check").innerHTML = "오답입니다.";
-  }
- </script>
-
- 
- <script type="text/javascript">
-  function myFucntion2() {
-   if(form2.quiz2[2].checked==true) document.getElementById("check2").innerHTML="정답입니다.";
-   else document.getElementById("check2").innerHTML="오답입니다.";
-  }
- </script>
--->
 </body>
 </html>
 
