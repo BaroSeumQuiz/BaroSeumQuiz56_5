@@ -38,7 +38,6 @@
  <p> 3. 다음 중 고려시대 왕은?</p>
  <form name="form3">
   <input type="text" name="quiz3" value=""><br>
-
   <input type="button" name="선택" value="정답확인" onclick="myFucntion3()">
  </form>
  <p id="check3"></p>
@@ -58,7 +57,7 @@
   }
    
   function myFucntion3() {
-   if(form2.quiz3.value=="근초고왕") document.getElementById("check3").innerHTML="정답입니다.";
+   if(form3.quiz3.value=="근초고왕") document.getElementById("check3").innerHTML="정답입니다.";
    else document.getElementById("check3").innerHTML="오답입니다.";
   }
    
