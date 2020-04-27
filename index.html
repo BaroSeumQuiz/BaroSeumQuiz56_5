@@ -18,6 +18,18 @@
  </form>
  <p id="check"></p>
  </div>
+ 
+ <div id="cho2" >
+ <p> 1. 다음 중 조선시대 왕은?</p>
+ <form name="form">
+  <input type="radio" name="kingName" value="v1">근초고<br>
+  <input type="radio" name="kingName" value="v2">광해<br>
+  <input type="radio" name="kingName" value="v3">숙종<br>
+  <input type="radio" name="kingName" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+ </form>
+ <p id="check"></p>
+ </div>
  <script type="text/javascript">
   function myFucntion() {
    if(form.kingName[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
