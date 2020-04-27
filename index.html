@@ -9,20 +9,20 @@
  <h1>한국사 8급 문제</h1>
  <div id="cho1" >
  <p> 1. 다음 중 고려시대 왕은?</p>
- <form name="form">
+ <form name="form1">
   <input type="radio" name="quiz1" value="v1">근초고왕<br>
   <input type="radio" name="quiz1" value="v2">의자왕<br>
   <input type="radio" name="quiz1" value="v3">충렬왕<br>
   <input type="radio" name="quiz1" value="v4">성종<br>
   <input type="button" name="선택" value="정답확인" onclick="myFucntion1()">
  </form>
- <p id="check"></p>
+ <p id="check1"></p>
  </div>
  
   <script type="text/javascript">
   function myFucntion1() {
-   if(form.quiz1[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
-   else document.getElementById("check").innerHTML="오답입니다.";
+   if(form1.quiz1[2].checked==true) document.getElementById("check1").innerHTML="정답입니다.";
+   else document.getElementById("check1").innerHTML="오답입니다.";
   }
  </script>
  
@@ -30,14 +30,14 @@
  
  <div id="cho2" >
  <p> 1. 다음 중 조선시대 왕은?</p>
- <form name="form">
+ <form name="form2">
   <input type="radio" name="quiz2" value="v1">근초고<br>
   <input type="radio" name="quiz2" value="v2">광해<br>
   <input type="radio" name="quiz2" value="v3">숙종<br>
   <input type="radio" name="quiz2" value="v4">성종<br>
   <input type="button" name="선택" value="정답확인" onclick="myFucntion2()">
  </form>
- <p id="check"></p>
+ <p id="check2"></p>
  </div>
  <!--
  <button onclick="myFucntion1()">역사 퀴즈</button>
@@ -53,8 +53,8 @@
  
  <script type="text/javascript">
   function myFucntion2() {
-   if(form.quiz2[2].checked==true) document.getElementById("check").innerHTML="정답입니다.";
-   else document.getElementById("check").innerHTML="오답입니다.";
+   if(form2.quiz2[2].checked==true) document.getElementById("check2").innerHTML="정답입니다.";
+   else document.getElementById("check2").innerHTML="오답입니다.";
   }
  </script>
 </body>
