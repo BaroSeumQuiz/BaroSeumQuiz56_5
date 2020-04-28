@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+<div id = "quiztitles" style="margin-left:25px; background-color: #F8FBEF; height: auto; width:615px; ">
+ <p style="margin-left:25px;">
+ <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiztitle.png" />
+ </p>
+</div>
+
+<div id = "quiztotal" style="margin-left:25px; background-color: #FBF8EF; height: auto; width:615px; border:2px solid orange;">
+  <!--단원소개-->
+ <p align = "center" style="font-size:24pt; font-family:굴림; font-weight:bold">
+   [1학년2학기] 10씩 세어보세요</p>
+<div id="wrongcheck" style="display:none;">
+   틀린문제 다시풀기
+</div>
+
+ <!--객관식 문제소개1-->
+ <div id="cho1" style="display:block;" >
+<div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
+   <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz1.png" />
+ <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
+   Q1. 10개의 묶음으로 세어 봅시다.
+ </p>
+ <form name="form1" style="margin-left:20px">
+   <font size=6px; >
+  <label><input type="radio" name="quiz1" value="v1"> 100</label></br>
+  <label><input type="radio" name="quiz1" value="v2"> 20</label><br>
+  <label><input type="radio" name="quiz1" value="v3"> 80</label><br>
+  </font>
+  <!--힌트-->
+ </br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(1);" >힌트를 사용해보세요.</a><br/>
+    <div id="hint1" style="display:none; border:2px dotted gray;">
+       <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint1.PNG" />
+    </div>
+  <div id="checktrue1" style="margin:0px 0 0 0px; display:none;" >
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
+  </div>
+  <div id="checkfalse1" style="margin:0px 0 0 0px; display:none;" >
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
+  </div>
+  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
+  <!--정답확인-->
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion1()"/>
+ </form>
+ <!--다음페이지-->
+ <img id="nextq1" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\nextbtn.png" onclick="gonext(this)"/>
+</div>
+</div>
+ </div>
+
+
+  <!--객관식 문제소개2-->
+   <div id="cho2" style="display:none;" >
+<div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
+   <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz2.png" />
+ <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
+   Q2. 10개의 묶음으로 세어 봅시다.
+ </p>
+ <form name="form2" style="margin-left:20px">
+   <font size=6px; >
+  <label><input type="radio" name="quiz2" value="v1"> 100</label></br>
+  <label><input type="radio" name="quiz2" value="v2"> 20</label><br>
+  <label><input type="radio" name="quiz2" value="v3"> 80</label><br>
+  </font>
+  <!--힌트-->
+</br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(2);" >힌트를 사용해보세요.</a><br/>
+    <div id="hint2" style="display:none; border:2px dotted gray;">
+       <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint2.PNG" />
+    </div>
+  <div id="checktrue2" style="margin:0px 0 0 0px; display:none;" >
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
+  </div>
+  <div id="checkfalse2" style="margin:0px 0 0 0px; display:none;" >
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
+  </div>
+  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
+  <!--정답확인-->
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion2()"/>
+ </form>
+ <!--다음페이지-->
+ <img id="nextq2" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\nextbtn.png" onclick="gonext(this)"/>
+ </div>
+</div>
+ </div>
+
+
+ <!--주관식 문제소개3-->
+ <div id="cho3" style="display:none;" >
+<div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
+  <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz3.png" />
+<p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
+  Q3. 10묶음이 3개이면 몇 묶음인가요?.
+</p>
+<form name="form3" style="margin-left:20px">
+  <font size=6px; >
+ <input type="text" name="quiz3" value=""><br>
+ </font>
+ <!--힌트-->
+</br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(3);" >힌트를 사용해보세요.</a><br/>
+   <div id="hint3" style="display:none; border:2px dotted gray;">
+      <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint3.PNG" />
+   </div>
+ <div id="checktrue3" style="margin:0px 0 0 0px; display:none;" >
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
+ </div>
+ <div id="checkfalse3" style="margin:0px 0 0 0px; display:none;" >
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
+ </div>
+ <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
+ <!--정답확인-->
+  <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion3()"/>
+</form>
+<!--다음페이지-->
+<img id="nextq9" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\wrongcheckbtn.png" onclick="gonext(this)"/>
+</div>
+</div>
+</div>
+
+
+
+
+<!--
+ <div id="cho4" style="display:none;" >
+ <p> 4. 다음 중 고려시대 왕은?</p>
+ <form name="form4">
+  <input type="radio" name="quiz4" value="v1">근초고왕<br>
+  <input type="radio" name="quiz4" value="v2">의자왕<br>
+  <input type="radio" name="quiz4" value="v3">충렬왕<br>
+  <input type="radio" name="quiz4" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion4()">
+ </form>
+ <p id="check4"></p>
+   <a href="javascript:hintshow(4);">힌트보기</a><br/>
+  <div id="hint4" style="display:none;">
+     <img src="/BaroQuiztemplet/images/hint4.png"/> 힌트임4
+  </div>
+  <input type="button" id="nextq4" name="선택" value="다음" onclick="gonext(this)">
+ </div>
+
+ <div id="cho5" style="display:none;" >
+ <p> 5. 다음 중 고려시대 왕은?</p>
+ <form name="form5">
+  <input type="radio" name="quiz5" value="v1">근초고왕<br>
+  <input type="radio" name="quiz5" value="v2">의자왕<br>
+  <input type="radio" name="quiz5" value="v3">충렬왕<br>
+  <input type="radio" name="quiz5" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion5()">
+ </form>
+ <p id="check5"></p>
+     <a href="javascript:hintshow(5);">힌트보기</a><br/>
+  <div id="hint5" style="display:none;">
+     <img src="/BaroQuiztemplet/images/hint5.png"/> 힌트임5
+  </div>
+  <input type="button" id="nextq5" name="선택" value="다음" onclick="gonext(this)">
+ </div>
+
+<div id="cho6" style="display:none;" >
+ <p> 6. 다음 중 고려시대 왕은?</p>
+ <form name="form6">
+  <input type="radio" name="quiz6" value="v1">근초고왕<br>
+  <input type="radio" name="quiz6" value="v2">의자왕<br>
+  <input type="radio" name="quiz6" value="v3">충렬왕<br>
+  <input type="radio" name="quiz6" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion6()">
+ </form>
+ <p id="check6"></p>
+    <a href="javascript:hintshow(6);">힌트보기</a><br/>
+  <div id="hint6" style="display:none;">
+     <img src="/BaroQuiztemplet/images/hint6.png"/> 힌트임6
+  </div>
+ <input type="button" id="nextq6" name="선택" value="다음" onclick="gonext(this)">
+ </div>
+
+<div id="cho7" style="display:none;" >
+ <p> 7. 다음 중 고려시대 왕은?</p>
+ <form name="form7">
+  <input type="radio" name="quiz7" value="v1">근초고왕<br>
+  <input type="radio" name="quiz7" value="v2">의자왕<br>
+  <input type="radio" name="quiz7" value="v3">충렬왕<br>
+  <input type="radio" name="quiz7" value="v4">성종<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion7()">
+ </form>
+ <p id="check7"></p>
+    <a href="javascript:hintshow(7);">힌트보기</a><br/>
+  <div id="hint7" style="display:none;">
+     <img src="/BaroQuiztemplet/images/hint7.png"/> 힌트임7
+  </div>
+ <input type="button" id="nextq7" name="선택" value="다음" onclick="gonext(this)">
+ </div>
+-->
+
+
+</div>
+
+  <script type="text/javascript">
+  var wrongcheckcnt = new Array();
+
+  function myFucntion1() {
+   checkresult_set(1)
+   if(form1.quiz1[1].checked==true){
+
+     checkresult_true(1);
+   }else{
+     wrongcheckcnt[0] = 1;
+     checkresult_flase(1);
+   }
+
+  }
+
+  function myFucntion2() {
+   checkresult_set(2)
+   if(form2.quiz2[2].checked==true){
+
+     checkresult_true(2);
+   }else{
+     wrongcheckcnt[1] = 1;
+     checkresult_flase(2);
+   }
+  }
+
+  function myFucntion3() {
+   checkresult_set(3)
+   if(form3.quiz3.value=="30"){
+
+  checkresult_true(3);
+   }else{
+     wrongcheckcnt[2] = 1;
+     checkresult_flase(3);
+   }
+
+
+ }
+
+
+
+
+   function gonext(id){
+    var num = (id.id).substr(5,1);
+    if(num==1){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='block';
+     document.getElementById('cho3').style.display='none';
+
+    }
+
+        if(num==2){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='block';
+
+    }
+
+      if(num==9){
+
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('wrongcheck').style.display='block';
+
+
+     for(var i=0; i<wrongcheckcnt.length; i++){
+       if(wrongcheckcnt[i] == 1){
+         var z = i+1;
+         document.getElementById("cho"+z).style.display='block';
+
+     }
+   }
+   for(var i=0; i<wrongcheckcnt.length; i++){
+     wrongcheckcnt[i] = 0;
+   }
+  }
+/*
+    if(num==4){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='block';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';
+    }
+
+     if(num==5){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='block';
+     document.getElementById('cho7').style.display='none';
+    }
+
+        if(num==6){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='block';
+    }
+
+     if(num==7){
+     document.getElementById('cho1').style.display='none';
+     document.getElementById('cho2').style.display='none';
+     document.getElementById('cho3').style.display='none';
+     document.getElementById('cho4').style.display='none';
+     document.getElementById('cho5').style.display='none';
+     document.getElementById('cho6').style.display='none';
+     document.getElementById('cho7').style.display='none';
+
+    }
+    */
+  }
+ var x = 0;
+  function hintshow(x){
+   var con = document.getElementById("hint"+x);
+   if(con.style.display=='none'){
+    con.style.display = 'block';
+   }else{
+    con.style.display = 'none';
+   }
+  }
+
+   function checkresult_true(x){
+    var con = document.getElementById("checktrue"+x);
+     con.style.display = 'inline';
+      }
+
+  function checkresult_flase(x){
+    var con = document.getElementById("checkfalse"+x);
+    con.style.display = 'inline';
+      }
+
+  function checkresult_set(x){
+    var con1 = document.getElementById("checktrue"+x);
+    con1.style.display = 'none';
+    var con2 = document.getElementById("checkfalse"+x);
+    con2.style.display = 'none';
+
+  }
+
+
+
+ </script>
+
+
+
+</body>
+</html>
