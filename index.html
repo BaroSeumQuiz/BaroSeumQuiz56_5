@@ -7,7 +7,7 @@
 <body>
 <div id = "quiztitles" style="margin-left:25px; background-color: #F8FBEF; height: auto; width:615px; ">
  <p style="margin-left:25px;">
-  <img src="/BaroQuiztemplet/images/quiztitle.png" />
+ <a href="https://baroseumquiz.github.io/BaroQuiztemplet/"> <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiztitle.png" /></a>
  </p>
 </div>
 
@@ -16,13 +16,24 @@
  <p align = "center" style="font-size:24pt; font-family:굴림; font-weight:bold">
    [1학년2학기] 10씩 세어보세요</p>
 <div id="wrongcheck" style="display:none;">
-   틀린문제 다시풀기
+   <font size=5px; font-family:돋움; weight:bold> 틀린문제 목록 </font><br></br>
+   <font size=4.5px; font-family:돋움;>
+   <div id="wrongq1" style="display:none;">
+     Q1. 10개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(1);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+   <div id="wrongq2" style="display:none;">
+     Q2. 5개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(2);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+   <div id="wrongq3" style="display:none;">
+     Q3. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(3);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+ </font>
 </div>
 
  <!--객관식 문제소개1-->
  <div id="cho1" style="display:block;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-   <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz1.png" />
+   <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz1.png" />
  <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
    Q1. 10개의 묶음으로 세어 봅시다.
  </p>
@@ -35,20 +46,21 @@
   <!--힌트-->
  </br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(1);" >힌트를 사용해보세요.</a><br/>
     <div id="hint1" style="display:none; border:2px dotted gray;">
-       <img src="/BaroQuiztemplet/images/hint1.PNG" />
+       <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint1.PNG" />
     </div>
   <div id="checktrue1" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checktrue.png"/>
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
   </div>
   <div id="checkfalse1" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checkflase.png"/>
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
   </div>
   <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
   <!--정답확인-->
-   <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion1()"/>
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion1()"/>
  </form>
  <!--다음페이지-->
- <img id="nextq1" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
+ <img id="nextq1" style="display:inline;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\nextbtn.png" onclick="gonext(this)"/>
+ <img id="wrongnextq1" style="display:none;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 </div>
 </div>
  </div>
@@ -57,7 +69,7 @@
   <!--객관식 문제소개2-->
    <div id="cho2" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-   <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz2.png" />
+   <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz2.png" />
  <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
    Q2. 10개의 묶음으로 세어 봅시다.
  </p>
@@ -70,20 +82,22 @@
   <!--힌트-->
 </br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(2);" >힌트를 사용해보세요.</a><br/>
     <div id="hint2" style="display:none; border:2px dotted gray;">
-       <img src="/BaroQuiztemplet/images/hint2.PNG" />
+       <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint2.PNG" />
     </div>
   <div id="checktrue2" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checktrue.png"/>
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
   </div>
   <div id="checkfalse2" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checkflase.png"/>
+    <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
   </div>
   <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
   <!--정답확인-->
-   <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion2()"/>
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion2()"/>
  </form>
  <!--다음페이지-->
- <img id="nextq2" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
+ <img id="nextq2" style="display:inline;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\nextbtn.png" onclick="gonext(this)"/>
+ <img id="wrongnextq2" style="display:none;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+
  </div>
 </div>
  </div>
@@ -92,7 +106,7 @@
  <!--주관식 문제소개3-->
  <div id="cho3" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz3.png" />
+  <img style="margin-left:20px" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\quiz3.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q3. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
@@ -103,20 +117,22 @@
  <!--힌트-->
 </br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(3);" >힌트를 사용해보세요.</a><br/>
    <div id="hint3" style="display:none; border:2px dotted gray;">
-      <img src="/BaroQuiztemplet/images/hint3.PNG" />
+      <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\hint3.PNG" />
    </div>
  <div id="checktrue3" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checktrue.png"/>
  </div>
  <div id="checkfalse3" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+   <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion3()"/>
+  <img src="C:\Users\admin\Desktop\BaroQuiztemplet\images\checkbtn.png" onclick="myFucntion3()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq9" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
+<img id="nextq9" style="display:inline;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\wrongcheckbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq3" style="display:none;" src="C:\Users\admin\Desktop\BaroQuiztemplet\images\wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+
 </div>
 </div>
 </div>
@@ -256,67 +272,23 @@
     }
 
       if(num==9){
-
      document.getElementById('cho1').style.display='none';
      document.getElementById('cho2').style.display='none';
      document.getElementById('cho3').style.display='none';
      document.getElementById('wrongcheck').style.display='block';
-
-
      for(var i=0; i<wrongcheckcnt.length; i++){
        if(wrongcheckcnt[i] == 1){
          var z = i+1;
-         document.getElementById("cho"+z).style.display='block';
+         document.getElementById("wrongq"+z).style.display='block';
+              }
+          }
+    for(var i=0; i<wrongcheckcnt.length; i++){
+            wrongcheckcnt[i] = 0;
+          }
+      }
 
-     }
-   }
-   for(var i=0; i<wrongcheckcnt.length; i++){
-     wrongcheckcnt[i] = 0;
-   }
   }
-/*
-    if(num==4){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='block';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
-    }
 
-     if(num==5){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='block';
-     document.getElementById('cho7').style.display='none';
-    }
-
-        if(num==6){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='block';
-    }
-
-     if(num==7){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
-
-    }
-    */
-  }
  var x = 0;
   function hintshow(x){
    var con = document.getElementById("hint"+x);
@@ -344,6 +316,20 @@
     con2.style.display = 'none';
 
   }
+
+  function wrongquizshow(x){
+    gonext(nextq9);
+    var con3 = document.getElementById("cho"+x);
+     con3.style.display = 'block';
+
+     var con4 = document.getElementById("wrongnextq"+x);
+      con4.style.display = 'inline';
+
+
+     var con5 = document.getElementById("nextq"+x);
+     con5.style.display = 'none';
+
+      }
 
 
 
