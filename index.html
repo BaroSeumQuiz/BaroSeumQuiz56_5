@@ -30,77 +30,64 @@
  </font>
 </div>
 
- <!--객관식 문제소개1-->
- <div id="cho1" style="display:block;" >
+ <!--주관식 문제소개1-->
+ <div id="cho1" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-   <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz1.png" />
- <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
-   Q1. 10개의 묶음으로 세어 봅시다.
- </p>
- <form name="form1" style="margin-left:20px">
-   <font size=6px; >
-  <label><input type="radio" name="quiz1" value="v1"> 100</label></br>
-  <label><input type="radio" name="quiz1" value="v2"> 20</label><br>
-  <label><input type="radio" name="quiz1" value="v3"> 80</label><br>
-  </font>
-  <!--힌트-->
- </br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(1);" >힌트를 사용해보세요.</a><br/>
-    <div id="hint1" style="display:none; border:2px dotted gray;">
-       <img src=/BaroQuiztemplet/images/hint1.PNG" />
-    </div>
-  <div id="checktrue1" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checktrue.png"/>
-  </div>
-  <div id="checkfalse1" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checkflase.png"/>
-  </div>
-  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
-  <!--정답확인-->
-   <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion1()"/>
- </form>
- <!--다음페이지-->
- <img id="nextq1" style="display:inline;" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
- <img id="wrongnextq1" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
-</div>
-</div>
+  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz1.png" />
+<p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
+  Q1. 10묶음이 1개이면 몇 묶음인가요?.
+</p>
+<form name="form1" style="margin-left:20px">
+  <font size=6px; >
+ <input type="text" name="quiz1" value=""><br>
+ </font>
+ <div id="checktrue1" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroQuiztemplet/images/checktrue.png"/>
  </div>
+ <div id="checkfalse1" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ </div>
+ <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
+ <!--정답확인-->
+  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion1()"/>
+</form>
+<!--다음페이지-->
+<img id="nextq1" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq1" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+
+</div>
+</div>
+</div>
 
 
-  <!--객관식 문제소개2-->
-   <div id="cho2" style="display:none;" >
+<!--주관식 문제소개2-->
+ <div id="cho2" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-   <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz2.png" />
- <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
-   Q2. 10개의 묶음으로 세어 봅시다.
- </p>
- <form name="form2" style="margin-left:20px">
-   <font size=6px; >
-  <label><input type="radio" name="quiz2" value="v1"> 100</label></br>
-  <label><input type="radio" name="quiz2" value="v2"> 20</label><br>
-  <label><input type="radio" name="quiz2" value="v3"> 80</label><br>
-  </font>
-  <!--힌트-->
-</br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(2);" >힌트를 사용해보세요.</a><br/>
-    <div id="hint2" style="display:none; border:2px dotted gray;">
-       <img src="/BaroQuiztemplet/images/hint2.PNG" />
-    </div>
+  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz2.png" />
+<p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
+  Q2. 10묶음이 3개이면 몇 묶음인가요?.
+</p>
+<form name="form2" style="margin-left:20px">
+  <font size=6px; >
+ <input type="text" name="quiz2" value=""><br>
+ </font>
   <div id="checktrue2" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checktrue.png"/>
-  </div>
-  <div id="checkfalse2" style="margin:0px 0 0 0px; display:none;" >
-    <img src="/BaroQuiztemplet/images/checkflase.png"/>
-  </div>
-  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
-  <!--정답확인-->
-   <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion2()"/>
- </form>
- <!--다음페이지-->
- <img id="nextq2" style="display:inline;" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
- <img id="wrongnextq2" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ </div>
+ <div id="checkfalse2" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ </div>
+ <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
+ <!--정답확인-->
+  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion2()"/>
+</form>
+<!--다음페이지-->
+<img id="nextq2" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq2" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
- </div>
 </div>
- </div>
+</div>
+</div>
 
 
  <!--주관식 문제소개3-->
@@ -114,11 +101,6 @@
   <font size=6px; >
  <input type="text" name="quiz3" value=""><br>
  </font>
- <!--힌트-->
-</br></br> <font size=3px; font-family:돋움;> 어려우신가요?  <a href="javascript:hintshow(3);" >힌트를 사용해보세요.</a><br/>
-   <div id="hint3" style="display:none; border:2px dotted gray;">
-      <img src="/BaroQuiztemplet/images/hint3.PNG" />
-   </div>
  <div id="checktrue3" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroQuiztemplet/images/checktrue.png"/>
  </div>
@@ -140,77 +122,6 @@
 
 
 
-<!--
- <div id="cho4" style="display:none;" >
- <p> 4. 다음 중 고려시대 왕은?</p>
- <form name="form4">
-  <input type="radio" name="quiz4" value="v1">근초고왕<br>
-  <input type="radio" name="quiz4" value="v2">의자왕<br>
-  <input type="radio" name="quiz4" value="v3">충렬왕<br>
-  <input type="radio" name="quiz4" value="v4">성종<br>
-  <input type="button" name="선택" value="정답확인" onclick="myFucntion4()">
- </form>
- <p id="check4"></p>
-   <a href="javascript:hintshow(4);">힌트보기</a><br/>
-  <div id="hint4" style="display:none;">
-     <img src="/BaroQuiztemplet/images/hint4.png"/> 힌트임4
-  </div>
-  <input type="button" id="nextq4" name="선택" value="다음" onclick="gonext(this)">
- </div>
-
- <div id="cho5" style="display:none;" >
- <p> 5. 다음 중 고려시대 왕은?</p>
- <form name="form5">
-  <input type="radio" name="quiz5" value="v1">근초고왕<br>
-  <input type="radio" name="quiz5" value="v2">의자왕<br>
-  <input type="radio" name="quiz5" value="v3">충렬왕<br>
-  <input type="radio" name="quiz5" value="v4">성종<br>
-  <input type="button" name="선택" value="정답확인" onclick="myFucntion5()">
- </form>
- <p id="check5"></p>
-     <a href="javascript:hintshow(5);">힌트보기</a><br/>
-  <div id="hint5" style="display:none;">
-     <img src="/BaroQuiztemplet/images/hint5.png"/> 힌트임5
-  </div>
-  <input type="button" id="nextq5" name="선택" value="다음" onclick="gonext(this)">
- </div>
-
-<div id="cho6" style="display:none;" >
- <p> 6. 다음 중 고려시대 왕은?</p>
- <form name="form6">
-  <input type="radio" name="quiz6" value="v1">근초고왕<br>
-  <input type="radio" name="quiz6" value="v2">의자왕<br>
-  <input type="radio" name="quiz6" value="v3">충렬왕<br>
-  <input type="radio" name="quiz6" value="v4">성종<br>
-  <input type="button" name="선택" value="정답확인" onclick="myFucntion6()">
- </form>
- <p id="check6"></p>
-    <a href="javascript:hintshow(6);">힌트보기</a><br/>
-  <div id="hint6" style="display:none;">
-     <img src="/BaroQuiztemplet/images/hint6.png"/> 힌트임6
-  </div>
- <input type="button" id="nextq6" name="선택" value="다음" onclick="gonext(this)">
- </div>
-
-<div id="cho7" style="display:none;" >
- <p> 7. 다음 중 고려시대 왕은?</p>
- <form name="form7">
-  <input type="radio" name="quiz7" value="v1">근초고왕<br>
-  <input type="radio" name="quiz7" value="v2">의자왕<br>
-  <input type="radio" name="quiz7" value="v3">충렬왕<br>
-  <input type="radio" name="quiz7" value="v4">성종<br>
-  <input type="button" name="선택" value="정답확인" onclick="myFucntion7()">
- </form>
- <p id="check7"></p>
-    <a href="javascript:hintshow(7);">힌트보기</a><br/>
-  <div id="hint7" style="display:none;">
-     <img src="/BaroQuiztemplet/images/hint7.png"/> 힌트임7
-  </div>
- <input type="button" id="nextq7" name="선택" value="다음" onclick="gonext(this)">
- </div>
--->
-
-
 </div>
 
   <script type="text/javascript">
@@ -218,9 +129,9 @@
 
   function myFucntion1() {
    checkresult_set(1)
-   if(form1.quiz1[1].checked==true){
+   if(form3.quiz3.value=="10"){
 
-     checkresult_true(1);
+  checkresult_true(1);
    }else{
      wrongcheckcnt[0] = 1;
      checkresult_flase(1);
@@ -229,10 +140,10 @@
   }
 
   function myFucntion2() {
-   checkresult_set(2)
-   if(form2.quiz2[2].checked==true){
+  checkresult_set(2)
+   if(form3.quiz3.value=="20"){
 
-     checkresult_true(2);
+  checkresult_true(2);
    }else{
      wrongcheckcnt[1] = 1;
      checkresult_flase(2);
