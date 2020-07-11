@@ -7,7 +7,7 @@
 <body>
 <div id = "quiztitles" style="margin-left:25px; background-color: #F8FBEF; height: auto; width:615px; ">
  <p style="margin-left:25px;">
- <a href="https://baroseumquiz.github.io/BaroQuiztemplet/"> <img src="/BaroQuiztemplet/images/quiztitle.png" /></a>
+ <img id="nextq01" style="display:inline;" src="/BaroSeumQuiz_check/images/quiztitle.png" onclick="gonext(this)"/>
  </p>
 </div>
 
@@ -18,85 +18,93 @@
 <div id="wrongcheck" style="display:none;">
    <font size=5px; font-family:돋움; weight:bold> 틀린문제 목록 </font><br></br>
    <font size=4.5px; font-family:돋움;>
-   <div id="wrongq1" style="display:none;">
-     Q1. 10개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(1);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq11" style="display:none;">
+     Q1. 10개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(11);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-   <div id="wrongq2" style="display:none;">
-     Q2. 5개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(2);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq12" style="display:none;">
+     Q2. 5개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(12);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-   <div id="wrongq3" style="display:none;">
-     Q3. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(3);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq13" style="display:none;">
+     Q3. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(13);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-    <div id="wrongq4" style="display:none;">
-     Q4. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(4);" style="font-weight:bold;">다시풀기</a><br></br>
+    <div id="wrongq14" style="display:none;">
+     Q4. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(14);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-   <div id="wrongq5" style="display:none;">
-     Q5. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(5);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq15" style="display:none;">
+     Q5. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(15);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-   <div id="wrongq6" style="display:none;">
-     Q6. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(6);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq16" style="display:none;">
+     Q6. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(16);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
-   <div id="wrongq6" style="display:none;">
-     Q7. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(7);" style="font-weight:bold;">다시풀기</a><br></br>
+   <div id="wrongq17" style="display:none;">
+     Q7. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(17);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+   <div id="wrongq18" style="display:none;">
+     Q8. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(18);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+   <div id="wrongq19" style="display:none;">
+     Q9. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(19);" style="font-weight:bold;">다시풀기</a><br></br>
+   </div>
+   <div id="wrongq20" style="display:none;">
+     10. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(20);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
  </font>
 </div>
 
 
  <!--주관식 문제소개1-->
- <div id="cho1" style="display:block;" >
+ <div id="cho11" style="display:block;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz1.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz01.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q1. 10묶음이 1개이면 몇 묶음인가요?.
 </p>
-<form name="form1" style="margin-left:20px">
+<form name="form11" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz1" value=""><br>
+ <input type="text" name="quiz11" value=""><br>
  </font>
- <div id="checktrue1" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue11" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse1" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse11" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion1()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" style="cursor:pointer" onclick="myFucntion11()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq01" style="display:inline;" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
- <img id="wrongnextq1" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
-
+<img id="nextq11" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" style="cursor:pointer" onclick="gonext(this)"/>
+ <img id="wrongnextq11" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 </div>
 </div>
 </div>
 
 
 <!--주관식 문제소개2-->
- <div id="cho2" style="display:none;" >
+<div id="cho12" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz2.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz02.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q2. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form2" style="margin-left:20px">
+<form name="form12" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz2" value=""><br>
+ <input type="text" name="quiz12" value=""><br>
  </font>
-  <div id="checktrue2" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+  <div id="checktrue12" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse2" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse12" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion2()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion12()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq02" style="display:inline;" src="/BaroQuiztemplet/images/nextbtn.png" onclick="gonext(this)"/>
- <img id="wrongnextq2" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq12" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+ <img id="wrongnextq12" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -104,29 +112,29 @@
 
 
  <!--주관식 문제소개3-->
- <div id="cho3" style="display:none;" >
+ <div id="cho13" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz3.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz03.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q3. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form3" style="margin-left:20px">
+<form name="form13" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz3" value=""><br>
+ <input type="text" name="quiz13" value=""><br>
  </font>
- <div id="checktrue3" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue13" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse3" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse13" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion3()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion13()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq03" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq3" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq13" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq13" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -134,29 +142,29 @@
 
 
 <!--주관식 문제소개4-->
- <div id="cho4" style="display:none;" >
+ <div id="cho14" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz4.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz04.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q4. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form4" style="margin-left:20px">
+<form name="form14" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz4" value=""><br>
+ <input type="text" name="quiz14" value=""><br>
  </font>
- <div id="checktrue4" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue14" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse4" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse14" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion4()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion14()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq04" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq4" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq14" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq14" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -164,29 +172,29 @@
 
 
 <!--주관식 문제소개5-->
- <div id="cho5" style="display:none;" >
+ <div id="cho15" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz5.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz05.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q5. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form5" style="margin-left:20px">
+<form name="form15" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz5" value=""><br>
+ <input type="text" name="quiz15" value=""><br>
  </font>
- <div id="checktrue5" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue15" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse5" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse15" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion5()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion15()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq05" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq5" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq15" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq15" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -194,29 +202,29 @@
 
 
 <!--주관식 문제소개6-->
- <div id="cho6" style="display:none;" >
+ <div id="cho16" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz6.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz06.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q6. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form6" style="margin-left:20px">
+<form name="form16" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz6" value=""><br>
+ <input type="text" name="quiz16" value=""><br>
  </font>
- <div id="checktrue6" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue16" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse6" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse16" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion6()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion16()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq06" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq6" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq16" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq16" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -224,58 +232,58 @@
 
 
 <!--주관식 문제소개7-->
- <div id="cho7" style="display:none;" >
+ <div id="cho17" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz7.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz07.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q7. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form7" style="margin-left:20px">
+<form name="form17" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz7" value=""><br>
+ <input type="text" name="quiz17" value=""><br>
  </font>
- <div id="checktrue7" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue17" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse7" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse17" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion7()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion17()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq07" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq7" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq17" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq17" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
 </div>
 
 <!--주관식 문제소개8-->
- <div id="cho8" style="display:none;" >
+ <div id="cho18" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz8.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz08.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q8. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form8" style="margin-left:20px">
+<form name="form18" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz8" value=""><br>
+ <input type="text" name="quiz18" value=""><br>
  </font>
- <div id="checktrue8" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue18" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse8" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse18" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion8()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion18()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq08" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq8" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq18" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq18" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -283,58 +291,58 @@
 
 
 <!--주관식 문제소개9-->
- <div id="cho9" style="display:none;" >
+ <div id="cho19" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz9.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz09.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q9. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form9" style="margin-left:20px">
+<form name="form19" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz9" value=""><br>
+ <input type="text" name="quiz19" value=""><br>
  </font>
- <div id="checktrue9" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue19" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse9" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse19" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion9()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion19()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq10" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq9" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq19" style="display:inline;" src="/BaroSeumQuiz_check/images/nextbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq19" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
 </div>
 
 <!--주관식 문제소개10-->
- <div id="cho10" style="display:none;" >
+ <div id="cho20" style="display:none;" >
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
-  <img style="margin-left:20px" src="/BaroQuiztemplet/images/quiz10.png" />
+  <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz10.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
   Q10. 10묶음이 3개이면 몇 묶음인가요?.
 </p>
-<form name="form10" style="margin-left:20px">
+<form name="form20" style="margin-left:20px">
   <font size=6px; >
- <input type="text" name="quiz10" value=""><br>
+ <input type="text" name="quiz20" value=""><br>
  </font>
- <div id="checktrue10" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checktrue.png"/>
+ <div id="checktrue20" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
  </div>
- <div id="checkfalse10" style="margin:0px 0 0 0px; display:none;" >
-   <img src="/BaroQuiztemplet/images/checkflase.png"/>
+ <div id="checkfalse20" style="margin:0px 0 0 0px; display:none;" >
+   <img src="/BaroSeumQuiz_check/images/checkflase.png"/>
  </div>
  <div id="check-next" style="margin:20px 0 0 250px; display:inline;">
  <!--정답확인-->
-  <img src="/BaroQuiztemplet/images/checkbtn.png" onclick="myFucntion10()"/>
+  <img src="/BaroSeumQuiz_check/images/checkbtn.png" onclick="myFucntion20()"/>
 </form>
 <!--다음페이지-->
-<img id="nextq10" style="display:inline;" src="/BaroQuiztemplet/images/wrongcheckbtn.png" onclick="gonext(this)"/>
-<img id="wrongnextq10" style="display:none;" src="/BaroQuiztemplet/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
+<img id="nextq20" style="display:inline;" src="/BaroSeumQuiz_check/images/wrongcheckbtn.png" onclick="gonext(this)"/>
+<img id="wrongnextq20" style="display:none;" src="/BaroSeumQuiz_check/images/wrongnextbtn.png" onclick="wrongquizshow(this)"/>
 
 </div>
 </div>
@@ -343,161 +351,257 @@
 
 </div>
 
-  <script type="text/javascript">
+<script type="text/javascript">
+
   var wrongcheckcnt = new Array();
 
-  function myFucntion1() {
-   checkresult_set(1)
-   if(form1.quiz1.value=="10"){
+  function myFucntion11() {
 
-  checkresult_true(1);
+   checkresult_set(11)
+   if(form11.quiz11.value=="10"){
+
+  checkresult_true(11);
    }else{
      wrongcheckcnt[0] = 1;
-     checkresult_flase(1);
+     checkresult_flase(11);
    }
   }
 
-  function myFucntion2() {
-  checkresult_set(2)
-   if(form2.quiz2.value=="20"){
+  function myFucntion12() {
+  checkresult_set(12)
+   if(form12.quiz12.value=="20"){
 
-  checkresult_true(2);
+  checkresult_true(12);
    }else{
      wrongcheckcnt[1] = 1;
-     checkresult_flase(2);
+     checkresult_flase(12);
    }
   }
 
-  function myFucntion3() {
-   checkresult_set(3)
-   if(form3.quiz3.value=="30"){
+  function myFucntion13() {
+   checkresult_set(13)
+   if(form13.quiz13.value=="30"){
 
-  checkresult_true(3);
+  checkresult_true(13);
    }else{
      wrongcheckcnt[2] = 1;
-     checkresult_flase(3);
+     checkresult_flase(13);
    }
   }
-   
-  function myFucntion4() {
-   checkresult_set(4)
-   if(form4.quiz4.value=="40"){
 
-  checkresult_true(4);
+  function myFucntion14() {
+   checkresult_set(14)
+   if(form14.quiz14.value=="40"){
+
+  checkresult_true(14);
    }else{
      wrongcheckcnt[3] = 1;
-     checkresult_flase(4);
+     checkresult_flase(14);
    }
   }
-   
-  function myFucntion5() {
-   checkresult_set(5)
-   if(form5.quiz5.value=="50"){
 
-  checkresult_true(5);
+  function myFucntion15() {
+   checkresult_set(15)
+   if(form15.quiz15.value=="50"){
+
+  checkresult_true(15);
    }else{
      wrongcheckcnt[4] = 1;
-     checkresult_flase(5);
-   }
-  } 
-
-   
-  function myFucntion6() {
-   checkresult_set(6)
-   if(form6.quiz6.value=="60"){
-
-  checkresult_true(6);
-   }else{
-     wrongcheckcnt[5] = 1;
-     checkresult_flase(6);
+     checkresult_flase(15);
    }
   }
-   
-  function myFucntion7() {
-   checkresult_set(7)
-   if(form7.quiz7.value=="70"){
 
-  checkresult_true(7);
+  function myFucntion16() {
+   checkresult_set(16)
+   if(form16.quiz16.value=="60"){
+
+  checkresult_true(16);
+   }else{
+     wrongcheckcnt[5] = 1;
+     checkresult_flase(16);
+   }
+  }
+
+  function myFucntion17() {
+   checkresult_set(17)
+   if(form17.quiz17.value=="70"){
+
+  checkresult_true(17);
    }else{
      wrongcheckcnt[6] = 1;
-     checkresult_flase(7);
+     checkresult_flase(17);
    }
-  } 
+  }
 
+  function myFucntion18() {
+   checkresult_set(18)
+   if(form18.quiz18.value=="80"){
+  checkresult_true(18);
+   }else{
+     wrongcheckcnt[7] = 1;
+     checkresult_flase(18);
+   }
+  }
+
+  function myFucntion19() {
+   checkresult_set(19)
+   if(form19.quiz19.value=="90"){
+
+  checkresult_true(19);
+   }else{
+     wrongcheckcnt[8] = 1;
+     checkresult_flase(19);
+   }
+  }
+
+  function myFucntion20() {
+   checkresult_set(20)
+   if(form20.quiz20.value=="100"){
+
+  checkresult_true(20);
+   }else{
+     wrongcheckcnt[9] = 1;
+     checkresult_flase(20);
+   }
+  }
 
 
    function gonext(id){
     var num = (id.id).substr(5,2);
-    if(num==01){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='block';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
+
+    if(num==11){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='block';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
     }
 
-    if(num==02){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='block';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
-    }
-    
-    if(num==03){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='block';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
+    if(num==12){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='block';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
     }
 
-    if(num==04){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='block';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='none';
+    if(num==13){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='block';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
     }
-    
-    if(num==05){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='block';
-     document.getElementById('cho7').style.display='none';
-    }
-    
-    if(num==06){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
-     document.getElementById('cho4').style.display='none';
-     document.getElementById('cho5').style.display='none';
-     document.getElementById('cho6').style.display='none';
-     document.getElementById('cho7').style.display='block';
-    }    
-    
-    
 
-      if(num=11){
-     document.getElementById('cho1').style.display='none';
-     document.getElementById('cho2').style.display='none';
-     document.getElementById('cho3').style.display='none';
+    if(num==14){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='block';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
+    }
+
+    if(num==15){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='block';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
+    }
+
+    if(num==16){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='block';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
+    }
+
+    if(num==17){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='block';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
+    }
+
+    if(num==18){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='block';
+     document.getElementById('cho20').style.display='none';
+    }
+
+    if(num==19){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='block';
+
+    }
+
+    if(num==20){
+     document.getElementById('cho11').style.display='none';
+     document.getElementById('cho12').style.display='none';
+     document.getElementById('cho13').style.display='none';
+     document.getElementById('cho14').style.display='none';
+     document.getElementById('cho15').style.display='none';
+     document.getElementById('cho16').style.display='none';
+     document.getElementById('cho17').style.display='none';
+     document.getElementById('cho18').style.display='none';
+     document.getElementById('cho19').style.display='none';
+     document.getElementById('cho20').style.display='none';
      document.getElementById('wrongcheck').style.display='block';
      for(var i=0; i<wrongcheckcnt.length; i++){
        if(wrongcheckcnt[i] == 1){
-         var z = i+1;
+         var z = i+11;
          document.getElementById("wrongq"+z).style.display='block';
               }
           }
@@ -509,14 +613,6 @@
   }
 
  var x = 0;
-  function hintshow(x){
-   var con = document.getElementById("hint"+x);
-   if(con.style.display=='none'){
-    con.style.display = 'block';
-   }else{
-    con.style.display = 'none';
-   }
-  }
 
    function checkresult_true(x){
     var con = document.getElementById("checktrue"+x);
@@ -537,7 +633,7 @@
   }
 
   function wrongquizshow(x){
-    gonext(nextq9);
+    gonext(nextq20);
     var con3 = document.getElementById("cho"+x);
      con3.style.display = 'block';
 
