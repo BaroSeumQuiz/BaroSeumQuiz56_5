@@ -19,10 +19,10 @@
    <font size=5px; font-family:돋움; weight:bold> 틀린문제 목록 </font><br></br>
    <font size=4.5px; font-family:돋움;>
    <div id="wrongq11" style="display:none;">
-     Q1. 10개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(11);" style="font-weight:bold;">다시풀기</a><br></br>
+     Q1. 공모양의 물건들을 아래와 같이 분류하였습니다. 알맞은 분류기준을 골라보세요. <a href="javascript:wrongquizshow(11);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
    <div id="wrongq12" style="display:none;">
-     Q2. 5개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(12);" style="font-weight:bold;">다시풀기</a><br></br>
+     Q2. 여려가지 물건들을 분류하였습니다. 알맞은 분류기준을 골라보세요.  <a href="javascript:wrongquizshow(12);" style="font-weight:bold;">다시풀기</a><br></br>
    </div>
    <div id="wrongq13" style="display:none;">
      Q3. 3개의 묶음으로 세어 봅시다. <a href="javascript:wrongquizshow(13);" style="font-weight:bold;">다시풀기</a><br></br>
@@ -57,7 +57,7 @@
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
   <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz01.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
-  Q1.<br> 10묶음이 1개이면 몇 묶음인가요?.
+  Q1.<br> 공모양의 물건들을 아래와 같이 분류하였습니다. <br> 알맞은 분류기준을 골라보세요.
 </p>
 <form name="form11" style="margin-left:20px">
   <font size=5px; >
@@ -68,7 +68,9 @@
   <label><input type="radio" name="quiz11" value="v2"> 20</label><br>
   <label><input type="radio" name="quiz11" value="v3"> 80</label><br>
 -->
- <input type="text" name="quiz11" value=""><br>
+  <label><input type="radio" name="quiz11" value="v1"> 색깔이 있는 것과 없는 것</label></br>
+  <label><input type="radio" name="quiz11" value="v2"> 딱딱한 것과 아닌 것</label><br>
+  <label><input type="radio" name="quiz11" value="v3"> 먹을 수 있는것과 없는 것</label><br>
  </font>
  <div id="checktrue11" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
@@ -93,7 +95,7 @@
 <div id = "quizstart" style="height: auto; width:615px; border-bottom:2px double orange;">
   <img style="margin-left:20px" src="/BaroSeumQuiz_check/images/quiz02.png" />
 <p style="margin-left:20px; font-size:20pt; font-family:굴림; font-weight:bold" >
-  Q2. <br> 10묶음이 3개이면 몇 묶음인가요?.
+  Q2. <br> 여려가지 물건들을 분류하였습니다. <br> 알맞은 분류기준을 골라보세요.
 </p>
 <form name="form12" style="margin-left:20px">
   <font size=5px; >
@@ -104,7 +106,9 @@
   <label><input type="radio" name="quiz12" value="v2"> 20</label><br>
   <label><input type="radio" name="quiz12" value="v3"> 80</label><br>
 -->
- <input type="text" name="quiz12" value=""><br>
+  <label><input type="radio" name="quiz12" value="v1"> 사용할 수 있는 것과 없는 것</label></br>
+  <label><input type="radio" name="quiz12" value="v2"> 원모양인 것과 상자모양인 것</label><br>
+  <label><input type="radio" name="quiz12" value="v3"> 길이가 긴 것과 짧은 것</label><br>
  </font>
   <div id="checktrue12" style="margin:0px 0 0 0px; display:none;" >
    <img src="/BaroSeumQuiz_check/images/checktrue.png"/>
@@ -432,7 +436,7 @@
    if(form11.quiz11.value=="20")
    if(form11.quiz11[1].checked==true)
    */
-   if(form11.quiz11.value=="10"){
+      if(form11.quiz11[2].checked==true){
   checkresult_true(11);
    }else{
      wrongcheckcnt[0] = 1;
@@ -446,7 +450,7 @@
    if(form11.quiz12.value=="20")
    if(form11.quiz12[1].checked==true)
    */
-   if(form12.quiz12.value=="20"){
+     if(form12.quiz12[1].checked==true){
   checkresult_true(12);
    }else{
      wrongcheckcnt[1] = 1;
